@@ -9,15 +9,15 @@ export default function Home () {
     const [query, setQuery] = useState('');
     const [response, setResponse] = useState('');
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: any) => {
         setQuery(e.target.value);
     };
 
-    const extractFirstSentence = (text) => {
+    const extractFirstSentence = (text: any) => {
         return text.split('. ')[0];
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
 
         try {
@@ -39,7 +39,7 @@ export default function Home () {
             } else {
                 setResponse("Sorry, I couldn't find any relevant information.");
             }
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error:', error);
             setResponse('Oops! Something went wrong.');
         }
