@@ -2,8 +2,8 @@ import Head from 'next/head';
 import { useState } from 'react';
 import axios from 'axios';
 
-const API_KEY = process.env.API_KEY;
-const SEARCH_ENGINE_ID = process.env.SEARCH_ENGINE_ID;
+const API_KEY = 'AIzaSyCYmC7KSHvce0gCybfJAJDMY1sp1DR0aV0';
+const SEARCH_ENGINE_ID = 'b31c5a99c091c4c13';
 
 export default function Home () {
     const [query, setQuery] = useState('');
